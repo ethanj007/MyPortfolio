@@ -10,3 +10,8 @@ with col2:
     content = '''hi there im ethan and im currently doing my 2nd year at srm.. ive taken btech cse with cyber security
     and im a vivid learner'''
     st.info(content)
+
+content2 = '''
+Below you can find some of the apps i have built in python. Feel free to contact me!!
+'''
+st.write(content2)
