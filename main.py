@@ -23,5 +23,6 @@ with col3:
     for index, row in df[:10].iterrows():
         st.header(row["title"])
 with col4:
-    for index, row in df[10:].iterrows():
+    for index, row in df[10:].iterrows(): #seperating into 2 columns
+
         st.header(row["title"])
