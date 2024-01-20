@@ -20,11 +20,13 @@ st.write(content2)
 col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
 df = pandas.read_csv("data.csv", sep=";")
 with col3:
-    for index, row in df[:10].iterrows():
-        st.header(row["title"]) # header font
-        st.write(row["description"]) # normal font
-        st.image("images (1)/"+ row["image"])
+    for index, row in df[1:].iterrows():  # seperating into 2 columns
+
+        st.header(row["title"])
+        st.write(row["description"])  # normal font
+        st.image("images (1)/" + row["image"])
         st.write(f"[Source Code]({row['url']})")
+
 with col4:
     for index, row in df[10:].iterrows(): #seperating into 2 columns
 
